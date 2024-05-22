@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Mentees block caps.
+ * FLC Mentees block caps.
  *
  * @package    block_flcmentees
  * @copyright  Mark Nelson <markn@moodle.com>

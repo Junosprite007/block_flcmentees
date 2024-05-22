@@ -23,10 +23,10 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['configtitle'] = 'Mentees block title';
-$string['configtitleblankhides'] = 'Mentees block title (no title if blank)';
+$string['configtitle'] = 'FLC Mentees block title';
+$string['configtitleblankhides'] = 'FLC Mentees block title (no title if blank)';
 $string['flcmentees:addinstance'] = 'Add a new FLC mentees block';
 $string['flcmentees:myaddinstance'] = 'Add a new FLC mentees block to Dashboard';
-$string['newmenteesblock'] = '(new Mentees block)';
-$string['pluginname'] = 'Mentees';
-$string['privacy:metadata'] = 'The Mentees block only shows data stored in other locations.';
+$string['newmenteesblock'] = '(new FLC Mentees block)';
+$string['pluginname'] = 'FLC Mentees';
+$string['privacy:metadata'] = 'The FLC Mentees block only shows data stored in other locations.';

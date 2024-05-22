@@ -19,6 +19,7 @@
  *
  * @package    block_flcmentees
  * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
+ * @author     Joshua Kirby
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -54,10 +55,11 @@ class block_flcmentees extends block_base {
     $allusernames = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
     if ($usercontexts = $DB->get_records_sql("SELECT c.instanceid, c.instanceid, $allusernames
                                                     FROM {role_assignments} ra, {context} c, {user} u
-                                                   WHERE ra.userid = ?
+                                                    WHERE ra.userid = ?
                                                          AND ra.contextid = c.id
                                                          AND c.instanceid = u.id
-                                                         AND c.contextlevel = " . CONTEXT_USER, array($USER->id))) {
+                                                         AND c.contextlevel = " . CONTEXT_USER . "
+                                                    ORDER BY u.lastname", array($USER->id))) {
 
       $this->content->text = '<ul>';
       foreach ($usercontexts as $usercontext) {
