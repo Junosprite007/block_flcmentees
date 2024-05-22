@@ -1,0 +1,3 @@
+# FLC Mentees
+
+A fork of the block_mentees plugin from Moodle Core. As of now, all this does is alphabetize the list of names (by last name, then first name). For whatever reason, Moodle doesn't do this already....
