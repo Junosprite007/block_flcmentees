@@ -59,6 +59,7 @@ class block_flcmentees extends block_base {
                                                          AND ra.contextid = c.id
                                                          AND c.instanceid = u.id
                                                          AND c.contextlevel = " . CONTEXT_USER . "
+                                                    GROUP BY c.instanceid, $allusernames
                                                     ORDER BY u.lastname, u.firstname", array($USER->id))) {
 
       $this->content->text = '<ul>';
