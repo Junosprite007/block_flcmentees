@@ -53,7 +53,7 @@ class block_flcmentees extends block_base {
     // get all the mentees, i.e. users you have a direct assignment to
     $userfieldsapi = \core_user\fields::for_name();
     $allusernames = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
-    if ($usercontexts = $DB->get_records_sql("SELECT c.instanceid, c.instanceid, $allusernames
+        if ($usercontexts = $DB->get_records_sql("SELECT c.instanceid, $allusernames
                                                     FROM {role_assignments} ra, {context} c, {user} u
                                                     WHERE ra.userid = ?
                                                          AND ra.contextid = c.id
